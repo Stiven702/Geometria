@@ -27,7 +27,7 @@ body {
     -o-transition: 0.3s;
 }
 
-/* Transformar el icono en X cuando el menú está abierto */
+/* Transformar el botón hamburguesa en X cuando el menú está abierto */
 #menu-toggle:checked + label.menu-icon .bar:nth-child(1) {
     transform: translateY(9px) rotate(45deg);
     -webkit-transform: translateY(9px) rotate(45deg);
