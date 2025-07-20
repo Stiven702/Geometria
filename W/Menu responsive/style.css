@@ -1,0 +1,266 @@
+/* Alinear el span de 'Inicio' a la izquierda en el navbar */
+.navbar ul {
+    justify-content: center;
+}
+
+.navbar ul li {
+    margin: 0 8px;
+}
+
+/* --- Estilos para el formulario de búsqueda en el navbar --- */
+.search-form {
+    display: flex;
+    align-items: center;
+    margin: 0 60px;
+}
+
+/* Estilos para el input de búsqueda */
+.search-box {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+span {
+    color: #fff;
+    font-size: 20px;
+}
+
+.colaboradores {
+    margin: 70px;
+}
+
+/* Estilos para el input de búsqueda */
+.search-box input[type="search"] {
+    padding: 7px 36px 7px 12px;
+    border-radius: 20px;
+    border: 1px solid #232b39;
+    outline: none;
+    font-size: 1rem;
+    background: #232b39;
+    color: #fff;
+    transition: border 0.2s;
+}
+
+/* Efecto hover para el input de búsqueda */
+.search-box input[type="search"]::placeholder {
+    color: #bbb;
+}
+
+/* Estilos para el botón de búsqueda */
+.search-btn {
+    position: absolute;
+    right: 4px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1.1em;
+    cursor: pointer;
+    padding: 0 6px;
+    outline: none;
+    transition: color 0.2s;
+}
+
+/* Efecto hover para el botón de búsqueda */
+.search-btn:hover {
+    color: #4fc3f7;
+}
+
+/* Estilos para la barra de navegación superior */ 
+.navbar {
+    background: #181f29;
+    color: #fff;
+    padding: 0 32px;
+    display: flex;
+    align-items: center;
+    height: 56px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+}
+
+/* Estilos para el logo */
+.navbar .logo {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-right: 40px;
+}
+
+/* Estilos para el icono de la caja */
+.navbar .logo::before {
+    content: '\1F4E6'; /* icono de caja */
+    font-size: 1.2em;
+    margin-right: 8px;
+}
+
+/* Estilos para la navegación */
+.navbar nav {
+    flex: 1;
+}
+
+/* Estilos para la lista de navegación */
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+/* Estilos para los elementos de la lista */
+.navbar li {
+    position: relative;
+}
+
+/* Estilos para los enlaces de navegación */
+.navbar a {
+    display: block;
+    padding: 16px 50px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background 0.2s;
+    -webkit-transition: background 0.2s;
+    -moz-transition: background 0.2s;
+    -ms-transition: background 0.2s;
+    -o-transition: background 0.2s;
+}
+
+/* Efecto hover para los enlaces */
+.navbar a:hover, .navbar li:hover > a {
+    background: #232b39;
+}
+
+
+
+/* Estilos para el menú desplegable */
+.navbar .dropdown ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #232b39;
+    min-width: 150px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    z-index: 10;
+}
+
+/* Mostrar el menú desplegable al pasar el mouse */
+.navbar .dropdown:hover ul {
+    display: block;
+}
+
+/* Estilos para los elementos del menú desplegable */
+.navbar .dropdown ul li a {
+    padding: 12px 18px;
+    font-size: 0.97rem;
+}
+
+/* Reset básico */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Botón hamburguesa */
+.menu-icon {
+    position: fixed;
+    top: 12px;
+    left: 20px;
+    width: 30px;
+    height: 25px;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+/* Estilos para las barras del botón hamburguesa */
+.menu-icon .bar {
+    height: 4px;
+    background: #800080;
+    margin: 5px 0;
+    border-radius: 2px;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+/* Transformar el botón hamburguesa en X cuando el menú está abierto */
+#menu-toggle:checked + label.menu-icon .bar:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+    -webkit-transform: translateY(9px) rotate(45deg);
+    -moz-transform: translateY(9px) rotate(45deg);
+    -ms-transform: translateY(9px) rotate(45deg);
+    -o-transform: translateY(9px) rotate(45deg);
+}
+#menu-toggle:checked + label.menu-icon .bar:nth-child(2) {
+    opacity: 0;
+}
+#menu-toggle:checked + label.menu-icon .bar:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
+}
+
+/* Ocultar checkbox */
+#menu-toggle {
+    display: none;
+}
+
+/* Menú lateral */
+.side-menu {
+    position: fixed;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: #ffffff;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    box-sizing: border-box;
+    transition: left 0.3s ease;
+    z-index: 1000;
+}
+
+ /* Estilo de la cabecera del menú */
+.side-menu h2 {
+    color: #800080;
+    margin-top: 3.5px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* Estilo de los enlaces del menú */
+.side-menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.side-menu ul li {
+    margin: 15px 0;
+}
+
+.side-menu ul li a {
+    text-decoration: none;
+    color: #111;
+    font-size: 16px;
+    transition: color 0.2s;
+}
+
+/* Estilo del ícono del menú */
+.icono-del-menu {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+/* Cambiar el color del texto al pasar el mouse */
+.side-menu ul li:hover a {
+    color: #2196f3;
+}
+
+/* Mostrar el menú cuando el checkbox está marcado */
+#menu-toggle:checked ~ .side-menu {
+    left: 0;
+}

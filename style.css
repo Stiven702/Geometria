@@ -6,8 +6,6 @@ body {
   background-color: #FFF4F4;
 }
 
-
-
 /* === Menú hamburguesa === */
 .menu-icon {
   position: fixed;
@@ -19,7 +17,7 @@ body {
   z-index: 1001;
 }
 
-
+/* === Estilo de las barras del menú hamburguesa === */
 .menu-icon .bar {
     height: 4px;
     background: #727272;
@@ -32,6 +30,7 @@ body {
     -o-transition: 0.3s;
 }
 
+/* === Transformar el botón hamburguesa en X cuando el menú está abierto === */
 #menu-toggle:checked + label.menu-icon .bar:nth-child(1) {
   transform: translateY(9px) rotate(45deg);
 }
@@ -42,6 +41,7 @@ body {
   transform: translateY(-9px) rotate(-45deg);
 }
 
+/* === Ocultar checkbox === */
 #menu-toggle {
   display: none;
 }
@@ -60,10 +60,12 @@ body {
   z-index: 1000;
 }
 
+/* === Mostrar el menú cuando el checkbox está marcado === */
 #menu-toggle:checked ~ .side-menu {
   left: 0;
 }
 
+/* === Estilo de los enlaces del menú === */
 .side-menu h2 {
   color: #800080;
   margin-top: 3.5px;
@@ -91,6 +93,7 @@ body {
   color: #2196f3;
 }
 
+/* === Iconos del menú lateral === */
 .icono-del-menu {
   width: 20px;
   height: 20px;
@@ -109,20 +112,24 @@ body {
   border: 3px solid rgba(8, 8, 8, 0.7);
 }
 
+/* === Logo del menú superior === */
 .M1_Indice, .M1_Inicio {
   cursor: pointer;
 }
 
+/* === Estilo del logo del menú superior === */
 .M1_Buscar input {
   padding: 5px;
   font-size: 14px;
 }
 
+/* === Estilo del botón de búsqueda del menú superior === */
 .GeoMath {
   display: flex;
   gap: 15px;
 }
 
+/* === Iconos de Geografía y Matemáticas en el menú superior === */
 .Geo_icon, .Math_icon {
   font-size: 20px;
   color: #800080;

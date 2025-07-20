@@ -1,0 +1,68 @@
+/* Estilos para la barra de navegación superior */
+.navbar {
+    background: #181f29;
+    color: #fff;
+    padding: 0 32px;
+    display: flex;
+    align-items: center;
+    height: 56px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+}
+.navbar .logo {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-right: 40px;
+}
+.navbar .logo::before {
+    content: '\1F4E6'; /* icono de caja */
+    font-size: 1.2em;
+    margin-right: 8px;
+}
+.navbar nav {
+    flex: 1;
+}
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+.navbar li {
+    position: relative;
+}
+.navbar a {
+    display: block;
+    padding: 16px 18px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background 0.2s;
+}
+.navbar a:hover, .navbar li:hover > a {
+    background: #232b39;
+}
+.navbar .dropdown > a::after {
+    content: '\25BC';
+    font-size: 0.7em;
+    margin-left: 6px;
+}
+.navbar .dropdown ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #232b39;
+    min-width: 150px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    z-index: 10;
+}
+.navbar .dropdown:hover ul {
+    display: block;
+}
+.navbar .dropdown ul li a {
+    padding: 12px 18px;
+    font-size: 0.97rem;
+}
