@@ -1,0 +1,105 @@
+/* Reset básico */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Botón hamburguesa */
+.menu-icon {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 30px;
+    height: 25px;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.menu-icon .bar {
+    height: 4px;
+    background: #800080;
+    margin: 5px 0;
+    border-radius: 2px;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+/* Transformar el icono en X cuando el menú está abierto */
+#menu-toggle:checked + label.menu-icon .bar:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+    -webkit-transform: translateY(9px) rotate(45deg);
+    -moz-transform: translateY(9px) rotate(45deg);
+    -ms-transform: translateY(9px) rotate(45deg);
+    -o-transform: translateY(9px) rotate(45deg);
+}
+#menu-toggle:checked + label.menu-icon .bar:nth-child(2) {
+    opacity: 0;
+}
+#menu-toggle:checked + label.menu-icon .bar:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
+}
+
+/* Ocultar checkbox */
+#menu-toggle {
+    display: none;
+}
+
+/* Menú lateral */
+.side-menu {
+    position: fixed;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: #ffffff;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    box-sizing: border-box;
+    transition: left 0.3s ease;
+    z-index: 1000;
+}
+
+ /* Estilo de la cabecera del menú */
+.side-menu h2 {
+    color: #800080;
+    margin-top: 3.5px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* Estilo de los enlaces del menú */
+.side-menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.side-menu ul li {
+    margin: 15px 0;
+}
+
+.side-menu ul li a {
+    text-decoration: none;
+    color: #111;
+    font-size: 16px;
+    transition: color 0.2s;
+}
+
+/* Estilo del ícono del menú */
+.icono-del-menu {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+/* Cambiar el color del texto al pasar el mouse */
+.side-menu ul li:hover a {
+    color: #2196f3;
+}
+
+/* Mostrar el menú cuando el checkbox está marcado */
+#menu-toggle:checked ~ .side-menu {
+    left: 0;
+}
