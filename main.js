@@ -1,12 +1,23 @@
 console.log('i don not know how to speak English');
 
-//cosa primitiva, sera mejorada desde css  expandida probablemente.
 
-document.getElementById("btn").addEventListener("click", function() {
- var btns = document.getElementById("btns");
- if (btns.style.display === "none") {
- btns.style.display = "block";
- } else {
- btns.style.display = "none";
- }
+document.addEventListener("DOMContentLoaded", () => {
+  const buscador = document.getElementById("buscador");
+  const articulos = document.querySelectorAll(".side-menu .articulo");
+  const menuToggle = document.getElementById("menu-toggle");
+
+  // Busqueda
+  buscador.addEventListener("input", () => {
+    const filtro = buscador.value.toLowerCase();
+    
+    articulos.forEach((item) => {
+      const texto = item.textContent.toLowerCase();
+      item.style.display = texto.includes(filtro) ? "block" : "none";
+    });
+  });
+
+  // Abrir el menú cuando el buscador recibe clic
+  buscador.addEventListener("focus", () => {
+    menuToggle.checked = true;
+  });
 });

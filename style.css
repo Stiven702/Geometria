@@ -1,42 +1,130 @@
-background {color: #FFF4F4;}
+/* === Estilo Base === */
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15pt;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15pt;
+  background-color: #FFF4F4;
 }
 
-.M1_Indice, .M1_Inicio{
-cursor: pointer;
+
+
+/* === Menú hamburguesa === */
+.menu-icon {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  width: 30px;
+  height: 25px;
+  cursor: pointer;
+  z-index: 1001;
 }
 
 
-
-.Menu_2{
-   
-    height: 100%;
-    width: 300px;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: rgb(196, 196, 196);
-    overflow: hidden;
-    padding-top: 20px;
-    transition: 50ms ease-in;
-
-
-
+.menu-icon .bar {
+    height: 4px;
+    background: #727272;
+    margin: 5px 0;
+    border-radius: 2px;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
 }
 
-.Menu_1{
-  
-   display: flex;
-   height: 70px;
-   justify-content: space-between;
-   background-color: rgba(196, 196, 196, 0.486);
-   align-items: center;
-   padding: 10px;
-   border: 3px rgba(8,8,8,0.7); 
-};
+#menu-toggle:checked + label.menu-icon .bar:nth-child(1) {
+  transform: translateY(9px) rotate(45deg);
+}
+#menu-toggle:checked + label.menu-icon .bar:nth-child(2) {
+  opacity: 0;
+}
+#menu-toggle:checked + label.menu-icon .bar:nth-child(3) {
+  transform: translateY(-9px) rotate(-45deg);
+}
 
+#menu-toggle {
+  display: none;
+}
 
+/* === Menú lateral === */
+.side-menu {
+  position: fixed;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background-color: #ffffff;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  box-sizing: border-box;
+  transition: left 0.3s ease;
+  z-index: 1000;
+}
+
+#menu-toggle:checked ~ .side-menu {
+  left: 0;
+}
+
+.side-menu h2 {
+  color: #800080;
+  margin-top: 3.5px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.side-menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.side-menu ul li {
+  margin: 15px 0;
+}
+
+.side-menu ul li a {
+  text-decoration: none;
+  color: #111;
+  font-size: 16px;
+  transition: color 0.2s;
+}
+
+.side-menu ul li:hover a {
+  color: #2196f3;
+}
+
+.icono-del-menu {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+/* === Menú superior === */
+.Menu_1 {
+  display: flex;
+  height: 70px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: rgba(196, 196, 196, 0.486);
+  border: 3px solid rgba(8, 8, 8, 0.7);
+}
+
+.M1_Indice, .M1_Inicio {
+  cursor: pointer;
+}
+
+.M1_Buscar input {
+  padding: 5px;
+  font-size: 14px;
+}
+
+.GeoMath {
+  display: flex;
+  gap: 15px;
+}
+
+.Geo_icon, .Math_icon {
+  font-size: 20px;
+  color: #800080;
+}
 

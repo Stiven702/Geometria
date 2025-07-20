@@ -1,112 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Geometría</title>
 
-  <title>GEOMETRÍA-INICIO</title>
-  
-  
-
-  <!-- css (visuales) -->
+  <!-- Iconos y estilos -->
   <link rel="stylesheet" href="style.css">
 </head>
-
-
 <body>
 
-  <!-- header, el buscador aun no funciona, probablemente lo hare cuando tengamos mas de 1 tema investigado, aquello del icono de geometria o matematica funcionaria dependiendo del tema que el usuario visualice -->
-  <nav class="Menu_1">
+  <!-- Botón hamburguesa -->
+  <input type="checkbox" id="menu-toggle">
+  <label for="menu-toggle" class="menu-icon">
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
 
+  </label>
+
+  <!-- Menú lateral -->
+  <nav class="side-menu">
+    <h2>INDICE</h2>
+    <ul>
+      <li class="articulo"><a href="#"><i class="fas fa-home"></i> amarillo</a></li>
+      <li class="articulo"><a href="#"><i class="fas fa-home"></i> azul</a></li>
+      <li class="articulo"><a href="#"><i class="fas fa-home"></i> verde</a></li>
+      <li class="articulo"><a href="#"><i class="fas fa-home"></i> rojo</a></li>
+      <li class="articulo"><a href="#"><i class="fas fa-home"></i> rosado</a></li>
+      <li class="articulo"><a href="#"><i class="fas fa-home"></i> somebody</a></li>
+      <li class="articulo"><a href="#"><i class="fas fa-home"></i> paracutirimicuaro</a></li>
+      <li class="articulo"> <a href="#"><i class="fas fa-home"></i> Mensajes</a></li>
+    </ul>
+  </nav>
+
+  <!-- Menú superior -->
+  <nav class="Menu_1">
+    
+    <div class="M1_Indice" style="visibility: hidden;">
+      <button id="btn">Indice</button>
+    </div>
     <div class="M1_Inicio">
       <button id="ini">Inicio</button>
     </div>
-    <!-- tener un boton de inicio en el inicio suena bastante inutil lmao-->
-
-
-    <div class="M1_Indice">
-      <button id="btn">Indice</button>
-    </div>
-    
     <div class="M1_Buscar">
-      <input type="text" name="Buscar" id="S_1" value="Buscar" />
+      <input type="text" name="" id="buscador" value="" />
     </div>
-    
-   <div class="Geo/Math">
-   <h1 class="Geo_icon">Geometria</h1>
-   <h1 class="Math_icon">Matematicas</h1>
-   
-   </div>
-
+    <div class="GeoMath">
+      <h1 class="Geo_icon">Geometría</h1>
+      <h1 class="Math_icon">Matemáticas</h1>
+    </div>
   </nav>
 
+  <!-- Contenido -->
+  <p></p>
 
-
-<!-- menu lateral, el display parece estar al revez, lo arreglare mañana, funciones incompletas. -->
-
-<nav class="Menu_2" id="btns">
-
-  <div class="R1">
-      placeholder
-    </div>
-    
-    <div class="R2">
-      placeholder
-    </div>
-  
-   <div class="R3">
-   <h1>more placeholders....</h1>
-   </nav>
-
-  </div>
-
-
-
-
-
-
-
-
-<!-- texto placeholder, hay que darle estilo, separar parrafos, tutulos y a futuro se crearan otras paginas para distintos propositos -->
-
-
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque id congue ante. Sed in cursus lectus. Nullam ut tincidunt ligula. Suspendisse tincidunt imperdiet enim id mollis. Fusce quis felis ultrices, cursus purus eget, imperdiet augue. Suspendisse accumsan ligula eget urna pulvinar laoreet. Praesent sodales rutrum dignissim.
-
-Integer nisl mi, molestie sed mauris et, pharetra tincidunt turpis. Maecenas auctor elit eget augue rhoncus elementum vel in ligula. Morbi vulputate elit in metus auctor, a sagittis leo laoreet. Aliquam ornare, quam vitae euismod pharetra, neque lectus venenatis ante, id condimentum nisl elit ac tellus. Integer pellentesque et velit eu suscipit. Integer pharetra dui eget nisi mattis, ut fermentum tortor rhoncus. Duis pretium scelerisque augue in lacinia. Maecenas lacinia libero eu nunc pharetra mattis.
-
-Donec ut nunc finibus, condimentum nibh sit amet, tempus ipsum. Quisque id porttitor ligula. Ut in posuere purus. In ac malesuada est, eget porta augue. Vivamus efficitur libero nec congue volutpat. Praesent velit magna, hendrerit congue elementum ac, consequat et orci. Quisque quis nibh purus. Suspendisse dignissim, ante a rhoncus pellentesque, libero turpis mollis lorem, sit amet venenatis turpis mi ac neque. Sed urna justo, tincidunt non ultricies nec, condimentum nec dui. Mauris elementum finibus augue eget sagittis.
-
-Morbi porta dictum ex eu lacinia. Proin eros neque, porttitor ut lorem in, venenatis luctus nisi. Nunc facilisis urna ipsum. Cras sed enim non nisl luctus dictum ac tempor elit. Integer in interdum mi, in suscipit velit. Praesent ultricies, augue in pulvinar suscipit, augue augue eleifend nunc, laoreet aliquam lorem nisi ac sapien. Curabitur tincidunt nisi sit amet sapien euismod, at congue nulla varius. Fusce in est ornare, ultricies risus quis, dapibus mi. Nam a augue laoreet nibh scelerisque scelerisque. Sed eu nisi nec magna consequat tristique eget congue massa. Sed a orci eu mi aliquet vestibulum sit amet et velit. Proin non ex sed dui porta varius. Praesent semper at tellus et posuere. Sed auctor mattis sapien, a porttitor neque tincidunt sed. Nam at facilisis arcu. Vivamus condimentum ipsum ante, nec sollicitudin libero porttitor id.
-
-Nam aliquam nisl lorem. Quisque sagittis, nisi viverra molestie consectetur, mi felis porttitor turpis, pellentesque varius mauris magna eget magna. Maecenas ut turpis ultricies, ullamcorper leo vel, consectetur sem. Vivamus tristique tortor id nisl consectetur, a finibus ipsum sollicitudin. Vestibulum ullamcorper pretium odio eget convallis. Pellentesque pretium iaculis risus, sed porttitor dui tempus nec. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed interdum blandit urna, ac ultricies odio ultricies aliquet. Sed malesuada, risus sed commodo tristique, elit sapien sagittis nibh, id molestie eros ligula sit amet sem. Pellentesque pellentesque rutrum felis vel sollicitudin. Curabitur blandit convallis aliquet.
-
-Fusce mollis, lorem vel ornare euismod, nisl eros porttitor massa, sed mollis elit nulla non sapien. Etiam porttitor sem sit amet dui tristique vestibulum. Nulla tristique metus ut elit ornare iaculis. Quisque hendrerit, turpis eu tempus suscipit, ipsum nibh molestie orci, nec consequat nulla massa ac ex. Suspendisse potenti. Donec interdum eros ut condimentum consequat. Nulla finibus erat eu nulla blandit elementum.
-
-Aenean malesuada nulla eget iaculis dapibus. Donec feugiat turpis non ligula mattis, a mattis tortor tristique. Aliquam nec orci ligula. Quisque bibendum tellus at tincidunt dictum. Quisque ornare iaculis ultricies. In porta mattis elit a iaculis. Vestibulum quis lobortis nisi. Cras cursus turpis consequat risus vulputate ornare. Proin condimentum ex ut augue vulputate luctus. Sed ultrices non nulla vel maximus. Donec semper in ipsum a accumsan. Pellentesque euismod orci tellus, sed luctus ligula ornare at. Vivamus suscipit rhoncus dolor, sed euismod ipsum maximus id. Proin at massa in nulla faucibus mattis in sit amet ligula. In congue id est sed luctus.
-
-Cras et nisi maximus, ullamcorper orci sit amet, scelerisque lectus. Vivamus venenatis iaculis tellus, eget dapibus odio interdum quis. Duis tristique tincidunt justo nec accumsan. Curabitur porta feugiat enim vitae euismod. Maecenas diam justo, sollicitudin eu dapibus id, viverra molestie est. Duis a nisi vel nulla egestas euismod vitae nec lectus. Nullam lectus orci, dapibus eu congue eget, porta eget augue. Suspendisse nibh odio, cursus at orci pretium, pretium ornare velit. Fusce feugiat ullamcorper arcu sed lacinia. Phasellus et sapien nisi. Mauris sit amet tristique nisl, in commodo sapien. Morbi lobortis lectus velit, sed lacinia augue interdum ut. Nam pretium in lacus quis mollis.
-
-Nam maximus dolor vel risus molestie egestas. Aliquam et purus blandit, ornare tellus ac, tempus libero. Suspendisse tristique ipsum ac vehicula condimentum. Aliquam nulla nisl, efficitur at massa et, posuere molestie justo. Aenean in elit pretium risus commodo sodales eleifend in sapien. Phasellus non diam et magna efficitur dapibus. Aliquam scelerisque leo sit amet nisl imperdiet, nec imperdiet lorem ultricies. Cras pellentesque id magna ut egestas.
-
-Proin congue ligula felis, sit amet scelerisque arcu malesuada et. Vestibulum quam ipsum, condimentum at laoreet a, vestibulum eu neque. Aliquam lectus ante, condimentum in augue a, volutpat blandit justo. Aliquam id tincidunt orci. Curabitur tincidunt urna ac neque rutrum posuere. Cras tempor massa nec justo ornare auctor quis sed lorem. Maecenas sit amet eros augue. Maecenas quis diam sed orci porta consequat.
-
-Donec auctor vel dolor id malesuada. Praesent varius sodales velit. Ut purus nisl, posuere vitae posuere eu, hendrerit in massa. Morbi porta dui sed lacus tempor, nec tincidunt ipsum tempus. Nullam luctus diam id erat luctus, ut sollicitudin magna varius. Nam nec neque finibus mauris porta venenatis. Aliquam tempus tellus leo, sed fermentum mi porttitor ac. Mauris tincidunt leo nunc, quis aliquam erat eleifend convallis. Ut condimentum, ipsum vel rhoncus cursus, sem lectus dictum mauris, eu pellentesque augue diam quis velit. Sed turpis dolor, elementum eget quam et, faucibus posuere eros. Aliquam pretium eros id risus finibus blandit sit amet sed ipsum. Morbi cursus fermentum dictum. Etiam id sem semper ante tincidunt faucibus.
-
-Praesent at dui neque. Phasellus sed dui et justo sodales pellentesque sed id dui. Etiam id luctus felis, facilisis aliquam arcu. Nam eget accumsan magna. In vel magna at risus ultrices mollis. Nunc lacinia mauris efficitur eros blandit, id sagittis sem pulvinar. Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam metus est, fringilla id ultricies non, facilisis non dui. Suspendisse dignissim dui nisi, vel accumsan turpis dignissim quis. Nullam imperdiet turpis dui, vitae elementum mauris tincidunt eu. Sed a justo odio. Nulla ut quam eget justo maximus consequat at vel nisi.
-
-Nam vel aliquam nisi. Cras rhoncus, neque ac vestibulum eleifend, erat neque molestie est, a consequat velit erat id libero. Sed ligula nibh, facilisis id tempus vel, posuere non ex. Nulla at ante eu turpis vulputate ornare. Proin pretium est dui, at consectetur augue porttitor mattis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eget dapibus erat. Pellentesque efficitur tincidunt massa, et gravida ipsum vehicula a. Integer iaculis ultrices dapibus. Etiam pretium id nibh id luctus. Integer laoreet posuere neque, hendrerit finibus lacus. Interdum et malesuada fames ac ante ipsum primis in faucibus.
-
-Cras sed est in odio pretium mollis. Phasellus a est est. Etiam congue nibh id nisi placerat, vel pulvinar nisi venenatis. Nam et risus ut nibh semper ultricies. Nullam volutpat magna eros, volutpat ultricies quam tristique ut. Proin a volutpat nulla, quis varius risus. Etiam nulla orci, rhoncus vel malesuada a, interdum vitae nunc.
-
-Curabitur sed tempus arcu. Proin quis ultricies urna. Proin id fermentum sapien. Vivamus commodo ex non orci auctor, at ultrices mi gravida. Aliquam a nisi viverra, dapibus velit ut, pulvinar leo. Maecenas pellentesque velit felis, sit amet tempor ex sodales vel. In fermentum elit dolor, at facilisis nisl dignissim sit amet. Sed a elementum erat.
-
-Nulla ac libero sed turpis tristique lacinia vel non lectus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Fusce dui orci, tempor et ullamcorper vitae, volutpat ut augue. Mauris facilisis enim vitae faucibus egestas. Phasellus laoreet eu tortor nec vehicula. Cras fermentum sed tortor eu luctus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ullamcorper, nisl id vehicula condimentum, massa leo suscipit sem, a tincidunt odio purus quis urna. Vivamus facilisis in orci ac interdum. Donec mattis ex vel neque viverra sollicitudin. Phasellus tempus, est id egestas finibus, dolor quam maximus quam, eget hendrerit massa neque ut sapien.
-
-Generated 16 paragraphs, 1343 words, 8933 bytes of Lorem Ipsum</p>
-
-
-  <!-- script -->
   <script src="main.js"></script>
 </body>
 </html>
