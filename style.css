@@ -1,7 +1,6 @@
 /* === Estilo Base === */
 body {
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 15pt;
   background-color: #ffffff;
   background-image: url(Backgrond.jpg);
@@ -11,9 +10,15 @@ body {
 li, a {
   list-style: none;
   text-decoration: none;
-  color: #000000;
+  font-size: 22px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #891a8d;
   padding: 3px 0px;
   margin: 0;
+}
+
+h1, h2 {
+  font-family: Lora;
 }
 
 /* === Estilo de los enlaces al pasar el mouse === */
@@ -22,10 +27,23 @@ a:hover {
   text-decoration: underline;
 }
 
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 22px;
+  text-align: justify;
+}
+
+.txt {
+  font-size: 18px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 10px;
+}
+
 /* === Estilo de los artículos === */
 .content{
   background-color: rgb(255, 255, 255);
-  border: 5px black;
+  border: 5px #000000;
   margin: 40px 30px 30px 30px;
   padding-top: 8px;
   padding-left: 10px;
@@ -37,7 +55,7 @@ a:hover {
 /* === Menú hamburguesa === */
 .menu-icon {
   position: fixed;
-  top: 12px;
+  top: 16px;
   left: 15px;
   width: 30px;
   height: 25px;
@@ -53,6 +71,10 @@ a:hover {
   margin: 5px 0;
   border-radius: 2px;
   transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
 }
 
 /* Transformación a X */
@@ -74,7 +96,7 @@ a:hover {
 /* Cuando el menú lateral esté abierto, el botón hamburguesa baja donde esta el índice */
 #menu-toggle:checked + label.menu-icon {
   position: fixed;
-  top: 70px;
+  top: 73px;
   left: 20px;
   z-index: 1000;
 
@@ -91,12 +113,12 @@ a:hover {
   box-shadow: 2px 0 10px #00000033;
   padding: 50px 20px ;
   box-sizing: border-box;
-  transition: left 0.2s ease;
+  transition: left 0.3s ease;
   z-index: 400;
-  -webkit-transition: left 0.2s ease;
-  -moz-transition: left 0.2s ease;
-  -ms-transition: left 0.2s ease;
-  -o-transition: left 0.2s ease;
+  -webkit-transition: left 0.3s ease;
+  -moz-transition: left 0.3s ease;
+  -ms-transition: left 0.3s ease;
+  -o-transition: left 0.3s ease;
 }
 
 /* Mostrar menú lateral */
@@ -151,7 +173,7 @@ a:hover {
   padding: 0 32px;
   display: flex;
   align-items: center;
-  height: 56px;
+  height: 65px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
   z-index: 500;
 }
@@ -252,6 +274,7 @@ a:hover {
 /* === Estilo del footer === */
 footer {
       background-color: #f5f5f5;
+      text-align: center;
       padding: 40px 0;
       font-family: Arial, sans-serif;
       position: relative;
@@ -276,7 +299,7 @@ footer {
     
     /* Estilo de los títulos de las secciones */
     .footer-section h4 {
-      font-size: 16px;
+      font-size: 22px;
       margin-bottom: 15px;
       color: #333;
     }
@@ -296,6 +319,7 @@ footer {
     .footer-section ul li a {
       text-decoration: none;
       color: #007BFF;
+      font-size: 18px;
     }
     
     /* Cambiar color al pasar el mouse */
