@@ -73,7 +73,7 @@ a:hover {
 
 /* Cuando el menú lateral esté abierto, el botón hamburguesa baja donde esta el índice */
 #menu-toggle:checked + label.menu-icon {
-  position: absolute;
+  position: fixed;
   top: 70px;
   left: 20px;
   z-index: 1002;
@@ -346,11 +346,9 @@ footer {
 }
 
 @media (max-width: 600px) {
-  .side-menu {
-    width: 100vw;
-    left: -100vw;
-    padding: 30px 5px;
-    font-size: 1rem;
+  .side-menu {;
+    top: 10px;
+    right: 10px;
   }
   #menu-toggle:checked ~ .side-menu {
     left: 0;
