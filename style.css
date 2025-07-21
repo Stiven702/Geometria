@@ -7,7 +7,22 @@ body {
   background-image: url(Backgrond.jpg);
 }
 
+/* === Estilo de los enlaces === */
+li, a {
+  list-style: none;
+  text-decoration: none;
+  color: #000000;
+  padding: 3px 0px;
+  margin: 0;
+}
 
+/* === Estilo de los enlaces al pasar el mouse === */
+a:hover {
+  color: #2196f3;
+  text-decoration: underline;
+}
+
+/* === Estilo de los artículos === */
 .content{
   background-color: rgb(255, 255, 255);
   border: 5px black;
@@ -19,21 +34,22 @@ body {
   
 }
 
-
 /* === Menú hamburguesa === */
 .menu-icon {
   position: fixed;
-  top: 20px;
+  top: 12px;
   left: 20px;
   width: 30px;
   height: 25px;
   cursor: pointer;
   z-index: 1001;
+  transition: top 0.3s, left 0.3s;
 }
 
+/* Estilo de las barras del menú hamburguesa */
 .menu-icon .bar {
   height: 4px;
-  background: #727272;
+  background: #800080;
   margin: 5px 0;
   border-radius: 2px;
   transition: 0.3s;
@@ -55,6 +71,19 @@ body {
   display: none;
 }
 
+/* Cuando el menú lateral esté abierto, el botón hamburguesa baja donde esta el índice */
+#menu-toggle:checked + label.menu-icon {
+  position: absolute;
+  top: 70px;
+  left: 20px;
+  z-index: 1002;
+  transition: top 0.2s, left 0.2s;
+  -webkit-transition: top 0.2s, left 0.2s;
+  -moz-transition: top 0.2s, left 0.2s;
+  -ms-transition: top 0.2s, left 0.2s;
+  -o-transition: top 0.2s, left 0.2s;
+}
+
 /* === Menú lateral === */
 .side-menu {
   position: fixed;
@@ -63,39 +92,53 @@ body {
   width: 250px;
   height: 100%;
   background-color: #ffffff;
-  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
-  padding: 20px;
+  box-shadow: 2px 0 10px #00000033;
+  padding: 50px 20px ;
   box-sizing: border-box;
-  transition: left 0.3s ease;
-  z-index: 1000;
+  transition: left 0.2s ease;
+  z-index: 400;
+  -webkit-transition: left 0.2s ease;
+  -moz-transition: left 0.2s ease;
+  -ms-transition: left 0.2s ease;
+  -o-transition: left 0.2s ease;
 }
 
+/* Mostrar menú lateral */
 #menu-toggle:checked ~ .side-menu {
   left: 0;
 }
 
+/* Estilo del título del menú lateral */
 .side-menu h2 {
   color: #800080;
   text-align: center;
-  margin-bottom: 30px;
+  margin: 20px 0px;
 }
 
+/* Estilo de los enlaces del menú lateral */
 .side-menu ul {
   list-style: none;
   padding: 0;
 }
 
+/* Estilo de los elementos del menú lateral */
 .side-menu ul li {
   margin: 15px 0;
 }
 
+/* Estilo de los enlaces del menú lateral */
 .side-menu ul li a {
   text-decoration: none;
   color: #111;
-  font-size: 16px;
+  font-size: 18px;
   transition: color 0.2s;
+  -webkit-transition: color 0.2s;
+  -moz-transition: color 0.2s;
+  -ms-transition: color 0.2s;
+  -o-transition: color 0.2s;
 }
 
+/* Cambiar color al pasar el mouse */
 .side-menu ul li:hover a {
   color: #2196f3;
 }
@@ -117,10 +160,12 @@ body {
   z-index: 500;
 }
 
+/* Logo en la navbar */
 .navbar nav {
   flex: 1;
 }
 
+/* Logo */
 .navbar ul {
   list-style: none;
   margin: 0;
@@ -130,13 +175,14 @@ body {
   justify-content: center;
 }
 
+/* Elementos de la navbar */
 .navbar li {
   position: relative;
   margin: 0 12px;
 }
 
-.navbar a,
-.navbar span {
+/* Estilo de los enlaces de la navbar */
+.navbar a, .navbar span {
   display: block;
   padding: 16px 8px;
   color: #fff;
@@ -145,8 +191,8 @@ body {
   transition: background 0.2s;
 }
 
-.navbar a:hover,
-.navbar li:hover > a {
+/* Cambiar color al pasar el mouse */
+.navbar a:hover, .navbar li:hover > a {
   background: #232b39;
 }
 
@@ -154,15 +200,17 @@ body {
 .search-form {
   display: flex;
   align-items: center;
-  margin: 0 24px;
+  margin: 0 30px;
 }
 
+/* Estilos para el input de búsqueda */
 .search-box {
   position: relative;
   display: flex;
   align-items: center;
 }
 
+/* Input de búsqueda */
 .search-box input[type="search"] {
   padding: 7px 36px 7px 12px;
   border-radius: 20px;
@@ -174,10 +222,12 @@ body {
   transition: border 0.2s;
 }
 
+/* Cambiar borde al enfocar */
 .search-box input[type="search"]::placeholder {
   color: #bbb;
 }
 
+/* Cambiar borde al enfocar */
 .search-btn {
   position: absolute;
   right: 4px;
@@ -193,15 +243,17 @@ body {
   transition: color 0.2s;
 }
 
+/* Cambiar color al pasar el mouse */
 .search-btn:hover {
   color: #4fc3f7;
 }
 
+/* === Estilo de los artículos === */
 .colaboradores {
   font-size: 1rem;
 }
 
-
+/* === Estilo del footer === */
 footer {
       background-color: #f5f5f5;
       padding: 40px 0;
@@ -210,6 +262,7 @@ footer {
       bottom: 0%;
     }
     
+    /* Contenedor del footer */
     .footer-container {
       display: flex;
       justify-content: space-around;
@@ -218,36 +271,43 @@ footer {
       bottom: 0%;
     }
     
+    /* Secciones del footer */
     .footer-section {
       flex: 1;
       padding: 10px;
       min-width: 200px;
     }
     
+    /* Estilo de los títulos de las secciones */
     .footer-section h4 {
       font-size: 16px;
       margin-bottom: 15px;
       color: #333;
     }
     
+    /* Estilo de los enlaces en las secciones */
     .footer-section ul {
       list-style: none;
       padding: 0;
     }
     
+    /* Estilo de los elementos de la lista */
     .footer-section ul li {
       margin-bottom: 10px;
     }
     
+    /* Estilo de los enlaces */
     .footer-section ul li a {
       text-decoration: none;
       color: #007BFF;
     }
     
+    /* Cambiar color al pasar el mouse */
     .footer-section ul li a:hover {
       color: #0056b3;
     }
     
+    /* Estilo del texto de contacto */
     .footer-bottom {
       text-align: center;
       margin-top: 30px;
@@ -258,3 +318,127 @@ footer {
       position: relative;
       bottom: 0%;
     }
+
+/* === Adaptar el contenido a cualquier dispositivo === */
+@media (max-width: 900px) {
+  .side-menu {
+    width: 200px;
+    padding: 40px 10px;
+  }
+  .navbar {
+    padding: 0 10px;
+    height: 48px;
+  }
+  .navbar a, .navbar span {
+    padding: 12px 4px;
+    font-size: 0.95rem;
+  }
+  .content {
+    margin: 20px 5px 20px 5px;
+    padding: 8px 5px 30px 5px;
+  }
+  .menu-icon {
+    left: 10px;
+    top: 8px;
+    width: 28px;
+    height: 22px;
+  }
+}
+
+@media (max-width: 600px) {
+  .side-menu {
+    width: 100vw;
+    left: -100vw;
+    padding: 30px 5px;
+    font-size: 1rem;
+  }
+  #menu-toggle:checked ~ .side-menu {
+    left: 0;
+    width: 100vw;
+  }
+  .navbar {
+    padding: 0 2px;
+    height: 44px;
+    font-size: 0.9rem;
+  }
+  .navbar {
+    flex-direction: row;
+    height: 44px;
+    min-height: 44px;
+    align-items: center;
+    justify-content: center;
+    padding: 0 2px;
+    box-sizing: border-box;
+  }
+  .navbar nav {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  .navbar ul {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  .navbar li {
+    margin: 0 6px;
+    width: auto;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 0;
+  }
+  .navbar a, .navbar span {
+    width: auto;
+    box-sizing: border-box;
+    padding: 8px 6px;
+    font-size: 0.95rem;
+    text-align: center;
+    white-space: nowrap;
+    overflow-wrap: normal;
+    line-height: 1.2;
+  }
+  .search-form {
+    margin: 0;
+    padding: 0 2px;
+    width: auto;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .search-box input[type="search"] {
+    font-size: 0.95rem;
+    padding: 6px 32px 6px 8px;
+    width: 90px;
+    min-width: 0;
+    box-sizing: border-box;
+  }
+  .search-btn {
+    font-size: 1em;
+    right: 2px;
+    padding: 0 4px;
+  }
+  .content {
+    margin: 10px 2px 10px 2px;
+    padding: 5px 2px 20px 2px;
+    font-size: 1rem;
+  }
+  .menu-icon {
+    left: 5px;
+    top: 5px;
+    width: 24px;
+    height: 20px;
+  }
+  .footer-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .footer-section {
+    min-width: unset;
+    padding: 5px;
+  }
+}
