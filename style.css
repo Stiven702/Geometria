@@ -73,7 +73,6 @@ a:hover {
 
 /* Cuando el menú lateral esté abierto, el botón hamburguesa baja donde esta el índice */
 #menu-toggle:checked + label.menu-icon {
-  padding: ;
   position: fixed;
   top: 70px;
   left: 20px;
