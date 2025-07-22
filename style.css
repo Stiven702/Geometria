@@ -29,8 +29,13 @@ a:hover {
 
 p {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 22px;
+  font-size: 20px;
+}
+
+.txt2 {
+  font-size: 20px;
   text-align: justify;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .txt {
