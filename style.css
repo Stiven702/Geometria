@@ -358,7 +358,7 @@ footer {
 }
 
 /* Adaptar barra de búsqueda a dispositivos móviles (10000px - 300px) */
-@media (max-width: 10000px) and (min-width: 350px) {
+@media (max-width: 10000px) and (min-width: 375px) {
   .search-form {
     margin: 10px 0 10px 0;
     width: 100%;
