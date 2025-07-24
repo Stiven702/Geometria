@@ -6,6 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const sideMenu = document.querySelector('.side-menu');
   const menuIcon = document.querySelector('.menu-icon');
 
+
   // Filtrar artículos en el side-menu
   buscador.addEventListener("input", () => {
     const filtro = buscador.value.toLowerCase();
@@ -13,6 +14,13 @@ document.addEventListener("DOMContentLoaded", () => {
       const texto = item.textContent.toLowerCase();
       item.style.display = texto.includes(filtro) ? "block" : "none";
     });
+  });
+
+  // Mostrar el menú lateral al enfocar la barra de búsqueda
+  buscador.addEventListener("focus", () => {
+    if (!menuToggle.checked) {
+      menuToggle.checked = true;
+    }
   });
 
   // Cerrar el menú lateral al hacer clic fuera, solo si está abierto
