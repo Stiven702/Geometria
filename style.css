@@ -374,9 +374,8 @@ footer {
     padding: 10px 0px 7px 10px;
     box-sizing: border-box;
   }
-
   .navbar {
-    padding: 0 10px;
+    padding: 0 25px;
   }
 
   .navbar li a {
