@@ -207,7 +207,7 @@ p {
 /* Estilo de los enlaces de la navbar */
 .navbar a, .navbar span {
   display: block;
-  padding: 18px 0px 15px 20px;
+  padding: 18px 20px 15px 20px;
   color: #fff;
   text-decoration: none;
   font-size: 1rem;
@@ -223,7 +223,7 @@ p {
 .search-form {
   display: flex;
   align-items: center;
-  margin: 0px 0px 0 20px;
+  margin: 0px 20px 0 25px;
 }
 
 /* Estilos para el input de búsqueda */
@@ -233,7 +233,7 @@ p {
   align-items: center;
 }
 
-/* Input de búsqueda */
+/* Estilo del input de búsqueda */
 .search-box input[type="search"] {
   padding: 7px 36px 7px 12px;
   border-radius: 20px;
@@ -243,6 +243,10 @@ p {
   background: #232b39;
   color: #fff;
   transition: border 0.2s;
+  -webkit-transition: border 0.2s;
+  -moz-transition: border 0.2s;
+  -ms-transition: border 0.2s;
+  -o-transition: border 0.2s;
 }
 
 /* Cambiar borde al enfocar */
@@ -250,7 +254,7 @@ p {
   color: #bbb;
 }
 
-/* Cambiar borde al enfocar */
+/* Estilo del botón de búsqueda */
 .search-btn {
   position: absolute;
   right: 4px;
@@ -352,7 +356,7 @@ footer {
 /* === Adaptar el contenido a cualquier dispositivo === */
 @media (max-width: 200px) {
   .side-menu {
-    width: z00px;
+    width: 200px;
     padding: 40px 10px;
   }
   .navbar {
@@ -375,12 +379,13 @@ footer {
   }
 }
 
-@media (max-width: 750px) {
+/* Cambiar el tamaño del botón de búsqueda en dispositivos más pequeños */
+@media (max-width: 1000px) {
   .search-box input[type="search"] {
     font-size: 0.85rem;
     padding: 10px 0px 5px 5px;
-    width: 200px;
-    min-width: 200px;
+    width: 250px;
+    min-width: 250px;
     box-sizing: border-box;
   }
   .search-btn {
@@ -390,12 +395,13 @@ footer {
   }
 }
 
-@media (max-width: 600px) {
+/* Cambiar el tamaño del botón de búsqueda en dispositivos más pequeños */
+@media (max-width: 550px) {
   .search-box input[type="search"] {
     font-size: 0.8rem;
     padding: 10px 0px 5px 5px;
-    width: 180px;
-    min-width: 180px;
+    width: 220px;
+    min-width: 220px;
   }
   .search-btn {
     font-size: 0.9em;
@@ -404,10 +410,39 @@ footer {
   }
 }
 
+/* Cambiar el tamaño del botón de búsqueda en dispositivos más pequeños */
+@media (max-width: 525px) {
+  .search-box input[type="search"] {
+    font-size: 0.75rem;
+    padding: 10px 0px 5px 0px;
+    width: 180px;
+    min-width: 180px;
+  }
+  .search-btn {
+    font-size: 0.85em;
+    right: 0px;
+    padding: 0 0px;
+  }
+}
+
+@media (max-width: 480px) {
+  .search-box input[type="search"] {
+    font-size: 0.75rem;
+    padding: 10px 0px 5px 0px;
+    width: 150px;
+    min-width: 150px;
+  }
+  .search-btn {
+    font-size: 0.85em;
+    right: 0px;
+    padding: 0 0px;
+  }
+}
+
 @media (max-width: 450px) {
   .search-box input[type="search"] {
     font-size: 0.75rem;
-    padding: 10px 0px 5px 5px;
+    padding: 10px 0px 5px 0px;
     width: 120px;
     min-width: 120px;
   }
@@ -418,6 +453,30 @@ footer {
   }
 }
 
+@media (max-width: 420px) {
+  .search-box input[type="search"] {
+    font-size: 0.75rem;
+    padding: 10px 0px 5px 0px;
+    width: 100px;
+    min-width: 100px;
+  }
+  .search-btn {
+    font-size: 0.85em;
+    right: 0px;
+    padding: 0 0px;
+  }
+}
+
+
+
+/* Ocultar el botón de búsqueda en dispositivos más pequeños */
+@media (max-width: 0px) {
+  .navbar ul li:nth-child(3) {
+    display: none;
+  }
+}
+
+/* Cambiar el tamaño del menú lateral y navbar en dispositivos más pequeños */
 @media (max-width: 200px) {
   .side-menu {
     top: 20px;
@@ -484,8 +543,8 @@ footer {
   .search-box input[type="search"] {
     font-size: 0.95rem;
     padding: 6px 32px 6px 8px;
-    width: 90px;
-    min-width: 0;
+    width: 200px;
+    min-width: 200px;
     box-sizing: border-box;
   }
   .search-btn {
