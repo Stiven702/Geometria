@@ -6,6 +6,10 @@ body {
   background-image: url(Backgrond.jpg);
 }
 
+/* justifica los parrafos */
+p{
+  text-align: justify;
+}
 /* === Estilo de los enlaces === */
 li, a {
   list-style: none;
