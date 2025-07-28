@@ -7,8 +7,8 @@
         {
             "type": "msedge",
             "request": "launch",
-            "name": "Open Triangulos.html",
-            "file": "c:\\Users\\Usuario\\Documents\\Academy stuff\\yes\\Geometria\\Triangulos.html"
+            "name": "Open Triangulos.htm",
+            "file": "c:\\Users\\Usuario\\Documents\\Academy stuff\\yes\\Geometria\\Triangulos.htm"
         }
     ]
 }
