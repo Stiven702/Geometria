@@ -380,5 +380,12 @@ footer {
 
   .navbar li a {
     box-sizing: border-box;
-  }  
+  }
+}
+
+/* Ocultar el botón de búsqueda en dispositivos más pequeños */
+@media (max-width: 1000px) {
+    .navbar ul li:nth-child(3) {
+    display: none;
+  }
 }
