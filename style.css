@@ -383,7 +383,7 @@ footer {
   }
 }
 
-/* Ocultar el botón de búsqueda en dispositivos más pequeños */
+/* Ocultar el li derecho en dispositivos moviles */
 @media (max-width: 1000px) {
     .navbar ul li:nth-child(3) {
     display: none;
