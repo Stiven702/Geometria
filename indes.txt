@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <!-- Infografia de H1  y H2  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link rel="icon" href="icono.png">
+  <title>Geometría Plana y Analitica</title>
+  <!-- FontAwesome (para iconos) -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Menú hamburguesa -->
+  <input type="checkbox" id="menu-toggle" />
+  <label for="menu-toggle" class="menu-icon">
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+  </label>
+
+  <!-- Menú lateral -->
+  <nav class="side-menu">
+    <h2>INDICE</h2>
+    <ul>
+      <li class="articulo"><a href="Triangulos.htm"><i class="fas fa-home"></i> Triangulos</a></li>
+      <li class="articulo"><a href="Area, perimetro y volumen.htm"><i class="fas fa-home"></i> Area, perimetro y volumen</a></li>
+      <li class="articulo"><a href="Teorema de Tales.htm"><i class="fas fa-home"></i> Teorema de Tales</a></li>
+      <li class="articulo"><a href="#"><i class="fas fa-home"></i> Teorema de pitagoras</a></li>
+      <li class="articulo"><a href="#"><i class="fas fa-home"></i> Angulos</a></li>
+      <li class="articulo"><a href="#"><i class="fas fa-home"></i> Tipos de lineas</a></li>
+      <li class="articulo"><a href="#"><i class="fas fa-home"></i> paracutirimicuaro</a></li>
+      <li class="articulo"><a href="#"><i class="fas fa-envelope"></i> Mensajes</a></li>
+    </ul>
+  </nav>
+
+  <!-- header-->
+  <div class="navbar">
+    <nav>
+      <ul>
+        <li><a href="index.htm">Inicio</a></li>
+        <li>
+          <form class="search-form" autocomplete="off">
+            <div class="search-box">
+              <input type="search" id="busqueda" name="busqueda" placeholder="Buscar..." />
+            </div>
+          </form>
+        </li>
+        <li><a href="index.htm">Geometría Plana y Analitica</a></li>
+      </ul>
+    </nav>
+    <span id="titulo-header"></span>
+  </div>
+
+  <!-- Contenido de la página -->
+  <section class="content">
+    <h2>Geometría Plana y Analitica</h2>
+    <h1>Introduccion</h1>
+    <p class="txt2">La geometría es la rama de las matemáticas que estudia las propiedades y las relaciones de figuras en el espacio. Dentro de ella, la geometría plana se enfoca en objetos bidimensionales como líneas, polígonos y círculos. Por otro lado, la geometría analítica combina el álgebra con la geometría asignando coordenadas a cada punto. Este enfoque permite traducir problemas geométricos en ecuaciones algebraicas, facilitando su análisis y resolución, en esta pagina podras encontrar los siguientes temas de la materia:
+    </p>
+      <div>
+        <li><a href="Triangulos.htm">Triangulos</a></li>
+        <li><a href="#">Área, perímetro y volumen</a></li>
+        <li><a href="#">Teorema de Tales</a></li>
+        <li><a href="#">Triangulos</a></li>
+        <li><a href="#">Lineas</a></li>
+        <li><a href="#">Teorema de Pitagoras</a></li>
+      </div>
+      <img src="Recursos/idk.jpeg" alt="" class="Imagen_Introduccion" style="width:300px;">
+  </section>
+
+<!-- pie de pagina -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-section">
+        <h4>Sobre Nosotros</h4>
+        <ul>
+          <li class="listas-footer"><a href="#">Quiénes Somos</a></li>
+          <li class="listas-footer"><a href="#">Colaboradores</a></li>
+          <li class="listas-footer"><a href="#"></a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Redes Sociales</h4>
+        <ul>
+          <li class="listas-footer"><a href="#">asiua</a></li>
+          <li class="listas-footer"><a href="#">asda</a></li>
+          <li class="listas-footer"><a href="#">vfvsefd</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Contáctanos</h4>
+        <ul>
+          <li class="listas-footer"><a href="#">murillostiven24@gmail.com</a></li>
+          <li class="listas-footer"><a href="#">312 6832280</a></li>
+          <li class="listas-footer"><a href="#">mosquerawilmer141@gmail.com</a></li>
+          <li class="listas-footer"><a href="#">312 8644101</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="txt">&copy; 2025 - Programa de Telecoumicaciones e Informatica 2025 01 - whatever</p>
+    </div>
+  </footer>
+  <script src="main.js"></script>
+</body>
+</html>

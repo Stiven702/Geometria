@@ -3,6 +3,348 @@ body {
   margin: 0;
   font-size: 15pt;
   background-color: #ffffff;
+  background-image: url(Background.jpg); /* corregido */
+}
+
+/* Estilo general para párrafos */
+p {
+  text-align: justify;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+/* === Estilo de listas y enlaces generales === */
+li {
+  list-style: none;
+  padding: 3px 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #7f1982;
+}
+
+/* Estilo de títulos */
+h1, h2 {
+  font-family: Lora;
+}
+
+/* Hover en enlaces */
+a:hover {
+  color: #2196f3;
+  text-decoration: underline;
+}
+
+/* Textos personalizados */
+.text-justified {
+  font-size: 20px;
+  text-align: justify;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.text-centered {
+  font-size: 18px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 10px;
+}
+
+/* === Estilo de los artículos === */
+.article-container {
+  background-color: #ffffff;
+  border: 5px solid #000000; /* corregido */
+  margin: 40px 30px 30px 30px;
+  padding: 8px 10px 40px 10px;
+}
+
+/* === Menú hamburguesa === */
+.menu-icon {
+  position: fixed;
+  top: 16px;
+  left: 15px;
+  width: 30px;
+  height: 25px;
+  cursor: pointer;
+  z-index: 1001;
+  transition: top 0.3s, left 0.3s;
+}
+
+.menu-icon .bar {
+  height: 4px;
+  background: #800080;
+  margin: 5px 0;
+  border-radius: 2px;
+  transition: 0.3s;
+}
+
+/* Transformación a X */
+#menu-toggle:checked + label.menu-icon .bar:nth-child(1) {
+  transform: translateY(9px) rotate(45deg);
+}
+
+#menu-toggle:checked + label.menu-icon .bar:nth-child(2) {
+  opacity: 0;
+}
+
+#menu-toggle:checked + label.menu-icon .bar:nth-child(3) {
+  transform: translateY(-9px) rotate(-45deg);
+}
+
+#menu-toggle {
+  display: none;
+}
+
+#menu-toggle:checked + label.menu-icon {
+  top: 73px;
+  left: 16px;
+  position: fixed;
+  z-index: 1000;
+}
+
+/* === Menú lateral === */
+.side-menu {
+  position: fixed;
+  left: -250px;
+  top: 0;
+  width: 250px;
+  height: 100%;
+  background-color: #ffffff;
+  box-shadow: 2px 0 10px #00000033;
+  padding: 50px 20px;
+  box-sizing: border-box;
+  transition: left 0.3s ease;
+}
+
+#menu-toggle:checked ~ .side-menu {
+  left: 0;
+}
+
+.side-menu h2 {
+  color: #800080;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.side-menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.side-menu ul li {
+  margin: 15px 0;
+}
+
+.side-menu ul li a {
+  text-decoration: none;
+  color: #111;
+  font-size: 18px;
+  transition: color 0.2s;
+}
+
+.side-menu ul li:hover a {
+  color: #2196f3;
+}
+
+/* === Header (navbar) === */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #181f29;
+  color: #fff;
+  padding: 0 32px;
+  display: flex;
+  align-items: center;
+  height: 65px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+  z-index: 500;
+}
+
+.navbar nav {
+  flex: 1;
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar li {
+  position: relative;
+  margin: 0 8px;
+}
+
+.navbar a, .navbar span {
+  display: block;
+  padding: 18px 20px 15px 20px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: background 0.2s;
+}
+
+.navbar a:hover, .navbar li:hover > a {
+  background: #232b39;
+}
+
+/* === Formulario de búsqueda === */
+.search-form {
+  display: flex;
+  align-items: center;
+  margin: 0 20px 0 100px;
+}
+
+.search-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.search-box input[type="search"] {
+  padding: 7px 36px 7px 12px;
+  border-radius: 20px;
+  border: 1px solid #232b39;
+  outline: none;
+  font-size: 1rem;
+  background: #232b39;
+  color: #fff;
+  transition: border 0.2s;
+}
+
+.search-box input[type="search"]::placeholder {
+  color: #bbb;
+}
+
+.search-btn {
+  position: absolute;
+  right: 4px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.1em;
+  cursor: pointer;
+  padding: 0 6px;
+  outline: none;
+  transition: color 0.2s;
+}
+
+.search-btn:hover {
+  color: #4fc3f7;
+}
+
+/* === Colaboradores === */
+.team-list {
+  font-size: 1rem;
+}
+
+/* === Footer === */
+footer {
+  background-color: #f5f5f5;
+  text-align: center;
+  padding: 40px 0;
+  font-family: Arial, sans-serif;
+  position: relative;
+  bottom: 0;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.footer-section {
+  flex: 1;
+  padding: 10px;
+  min-width: 200px;
+}
+
+.footer-section h4 {
+  font-size: 22px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+  text-decoration: none;
+  color: #007BFF;
+  font-size: 18px;
+}
+
+.footer-section ul li a:hover {
+  color: #0056b3;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid #ccc;
+  color: #666;
+  font-size: 14px;
+}
+
+.footer-section ul.listas-footer li a:hover {
+  text-decoration: underline;
+}
+
+/* === Media Queries === */
+@media (max-width: 768px) {
+  .search-form {
+    margin: 10px 0;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .search-box {
+    width: 100%;
+  }
+
+  .search-box input[type="search"] {
+    width: 100%;
+    font-size: 15px;
+    padding: 10px 0 7px 10px;
+    box-sizing: border-box;
+  }
+
+  .navbar {
+    padding: 0 25px;
+  }
+
+  .navbar li a {
+    box-sizing: border-box;
+  }
+}
+
+@media (max-width: 1000px) {
+  .navbar ul li:nth-child(3) {
+    display: none;
+  }
+}
+/* === Estilo Base === */
+body {
+  margin: 0;
+  font-size: 15pt;
+  background-color: #ffffff;
   background-image: url(Backgrond.jpg);
 }
 
