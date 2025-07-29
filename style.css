@@ -3,7 +3,7 @@ body {
   margin: 0;
   font-size: 15pt;
   background-color: #ffffff;
-  background-image: url(Background.jpg); /* corregido */
+  background-image: url(upscalemedia-transformed.png); /* corregido */
 }
 
 /* Estilo general para párrafos */
