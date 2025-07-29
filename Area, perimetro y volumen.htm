@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Geometría Plana y Analitica: Triangulos:Area, perimetro y volumen</title>
-  <!-- FontAwesome (para iconos) -->
+  <title>Geometría Plana y Analítica: Triángulos - Área, Perímetro y Volumen</title>
+  <!-- FontAwesome -->
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -12,99 +12,93 @@
 
   <!-- Menú hamburguesa -->
   <input type="checkbox" id="menu-toggle" />
-  <label for="menu-toggle" class="menu-icon">
-    <div class="bar"></div>
-    <div class="bar"></div>
-    <div class="bar"></div>
+  <label for="menu-toggle" class="menu-icon" aria-label="Abrir menú">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
   </label>
 
   <!-- Menú lateral -->
-  <nav class="side-menu">
-    <h2>INDICE</h2>
+  <nav class="side-menu" aria-label="Menú lateral">
+    <h2>Índice</h2>
     <ul>
-      <li class="articulo"><a href="Triangulos.htm"><i class="fas fa-home"></i> Triangulos</a></li>
-      <li class="articulo"><a href="Area, perimetro y volumen.htm"><i class="fas fa-home"></i> Area, perimetro y volumen</a></li>
-      <li class="articulo"><a href="Teorema de Tales.htm"><i class="fas fa-home"></i> Teorema de Tales</a></li>
-      <li class="articulo"><a href="#"><i class="fas fa-home"></i> Teorema de pitagoras</a></li>
-      <li class="articulo"><a href="#"><i class="fas fa-home"></i> Angulos</a></li>
-      <li class="articulo"><a href="#"><i class="fas fa-home"></i> Tipos de lineas</a></li>
-      <li class="articulo"><a href="#"><i class="fas fa-home"></i> paracutirimicuaro</a></li>
-      <li class="articulo"><a href="#"><i class="fas fa-envelope"></i> Mensajes</a></li>
+      <li><a href="Triangulos.htm"><i class="fas fa-home"></i> Triángulos</a></li>
+      <li><a href="Area-perimetro-volumen.htm"><i class="fas fa-home"></i> Área, perímetro y volumen</a></li>
+      <li><a href="Teorema-de-Tales.htm"><i class="fas fa-home"></i> Teorema de Tales</a></li>
+      <li><a href="#"><i class="fas fa-home"></i> Teorema de Pitágoras</a></li>
+      <li><a href="#"><i class="fas fa-home"></i> Ángulos</a></li>
+      <li><a href="#"><i class="fas fa-home"></i> Tipos de líneas</a></li>
+      <li><a href="#"><i class="fas fa-home"></i> Paracutirimícuaro</a></li>
+      <li><a href="#"><i class="fas fa-envelope"></i> Mensajes</a></li>
     </ul>
   </nav>
 
-  <!-- header-->
-  <div class="navbar">
-    <nav>
+  <!-- Encabezado -->
+  <header class="navbar" role="banner">
+    <nav aria-label="Navegación principal">
       <ul>
         <li><a href="index.htm">Inicio</a></li>
-        
         <li>
-          <form class="search-form" autocomplete="off">
+          <form class="search-form" autocomplete="off" role="search">
+            <label for="busqueda" class="visually-hidden">Buscar</label>
             <div class="search-box">
               <input type="search" id="busqueda" name="busqueda" placeholder="Buscar..." />
-              <button type="button" class="search-btn" aria-label="Buscar">
+              <button type="submit" class="search-btn" aria-label="Buscar">
                 <i class="fas fa-search"></i>
               </button>
             </div>
           </form>
         </li>
-        <li><a href="index.htm">Geometría Plana y Analitica</a></li>
-        
+        <li><a href="index.htm">Geometría Plana y Analítica</a></li>
       </ul>
     </nav>
-  </div>
+  </header>
 
-  <!-- Contenido de la página -->
-  <section class="content">
-    
-    
-      <div>
-        <li><a href="#">Triangulos</a></li>
+  <!-- Contenido principal -->
+  <main class="content" role="main">
+    <section>
+      <ul>
+        <li><a href="#">Triángulos</a></li>
         <li><a href="#">Área, perímetro y volumen</a></li>
         <li><a href="#">Teorema de Tales</a></li>
-        <li><a href="#">Triangulos</a></li>
-        <li><a href="#">Lineas</a></li>
-        <li><a href="#">Teorema de Pitagoras</a></li>
-      </div>
+        <li><a href="#">Líneas</a></li>
+        <li><a href="#">Teorema de Pitágoras</a></li>
+      </ul>
+    </section>
+  </main>
 
-
-  </section>
-
-<!-- pie de pagina -->
+  <!-- Pie de página -->
   <footer>
     <div class="footer-container">
       <div class="footer-section">
         <h4>Sobre Nosotros</h4>
         <ul>
-          <li><a href="ventas.htm">Quiénes Somos</a></li>
+          <li><a href="ventas.htm">Quiénes somos</a></li>
           <li><a href="#">Colaboradores</a></li>
-          <li><a href="#"></a></li>
         </ul>
       </div>
-      
+
       <div class="footer-section">
         <h4>Redes Sociales</h4>
         <ul>
-          <li><a href="#">asiua</a></li>
-          <li><a href="#">asda</a></li>
-          <li><a href="#">vfvsefd</a></li>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">YouTube</a></li>
         </ul>
       </div>
+
       <div class="footer-section">
         <h4>Contáctanos</h4>
         <ul>
-          <li><a href="#">murillostiven24@gmail.com</a></li>
-          <li><a href="#">312 6832280</a></li>
-          <li></li>
+          <li><a href="mailto:murillostiven24@gmail.com">murillostiven24@gmail.com</a></li>
+          <li><a href="tel:+573126832280">312 683 2280</a></li>
         </ul>
       </div>
     </div>
     <div class="footer-bottom">
-      <p>&copy; 2025 - Programa de Telecounicaciones e Informatica 2025 01 - whatever</p>
+      <p>&copy; 2025 - Programa de Telecomunicaciones e Informática</p>
     </div>
   </footer>
-
 
   <script src="main.js"></script>
 </body>
