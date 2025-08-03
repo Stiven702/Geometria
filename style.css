@@ -11,6 +11,7 @@ p {
   text-align: justify;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
+  max-width: 1080px;
 }
 
 /* === Estilo de listas y enlaces generales === */
@@ -50,14 +51,6 @@ a:hover {
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
   padding: 10px;
-}
-
-/* === Estilo de los artículos === */
-.article-container {
-  background-color: #ffffff;
-  border: 5px solid #000000; /* corregido */
-  margin: 40px 30px 30px 30px;
-  padding: 8px 10px 40px 10px;
 }
 
 /* === Menú hamburguesa === */
@@ -348,10 +341,6 @@ body {
   background-image: url(Backgrond.jpg);
 }
 
-/* justifica los parrafos */
-p{
-  text-align: justify;
-}
 /* === Estilo de los enlaces === */
 li, a {
   list-style: none;
@@ -393,14 +382,10 @@ p {
 
 /* === Estilo de los artículos === */
 .content{
-  background-color: rgb(255, 255, 255);
-  border: 5px #000000;
-  margin: 40px 30px 30px 30px;
-  padding-top: 8px;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-bottom: 40px;
-  
+  background-color: #ffffff;
+  border: 2px solid #2e1a47;
+  margin: 40px 50px 30px 50px;
+  padding: 8px 10px 40px 10px;
 }
 
 /* === Menú hamburguesa === */
