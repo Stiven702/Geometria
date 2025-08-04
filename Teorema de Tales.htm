@@ -3,8 +3,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Geometría Plana y Analitica: Triangulos:Area, perimetro y volumen</title>
-  <!-- FontAwesome (para iconos) -->
+
+  <!-- Tipografía para H1 y H2 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+  <link rel="icon" href="Icono.png">
+  <title>Geometría Plana y Analítica</title>
+
+  <!-- FontAwesome para iconos -->
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -20,91 +27,90 @@
 
   <!-- Menú lateral -->
   <nav class="side-menu">
-    <h2>INDICE</h2>
+    <h2>Índice</h2>
     <ul>
-      <li class="articulo"><a href="Triangulos.htm"><i class="fas fa-home"></i> Triangulos</a></li>
-      <li class="articulo"><a href="Area, perimetro y volumen.htm"><i class="fas fa-home"></i> Area, perimetro y volumen</a></li>
-      <li class="articulo"><a href="#"><i class="fas fa-home"></i> Teorema de Tales</a></li>
-      <li class="articulo"><a href="#"><i class="fas fa-home"></i> Teorema de pitagoras</a></li>
-      <li class="articulo"><a href="#"><i class="fas fa-home"></i> Angulos</a></li>
-      <li class="articulo"><a href="#"><i class="fas fa-home"></i> Tipos de lineas</a></li>
-      <li class="articulo"><a href="#"><i class="fas fa-home"></i> paracutirimicuaro</a></li>
-      <li class="articulo"><a href="#"><i class="fas fa-envelope"></i> Mensajes</a></li>
+      <li><a href="Triangulos.htm"><i class="fas fa-home"></i> Triángulos</a></li>
+      <li><a href="Area, perimetro y volumen.htm"><i class="fas fa-home"></i> Área, perímetro y volumen</a></li>
+      <li><a href="Teorema de Tales.htm"><i class="fas fa-home"></i> Teorema de Tales</a></li>
+      <li><a href="#"><i class="fas fa-home"></i> Teorema de Pitágoras</a></li>
+      <li><a href="#"><i class="fas fa-home"></i> Ángulos</a></li>
+      <li><a href="#"><i class="fas fa-home"></i> Tipos de líneas</a></li>
+      <li><a href="#"><i class="fas fa-home"></i> Paracutirimicuaro</a></li>
+      <li><a href="#"><i class="fas fa-envelope"></i> Mensajes</a></li>
     </ul>
   </nav>
 
-  <!-- header-->
-  <div class="navbar">
+  <!-- Barra de navegación -->
+  <header class="navbar">
     <nav>
       <ul>
         <li><a href="index.htm">Inicio</a></li>
-        
         <li>
           <form class="search-form" autocomplete="off">
             <div class="search-box">
               <input type="search" id="busqueda" name="busqueda" placeholder="Buscar..." />
-              <button type="button" class="search-btn" aria-label="Buscar">
-                <i class="fas fa-search"></i>
-              </button>
+              <button type="submit" class="search-btn"><i class="fas fa-search"></i></button>
             </div>
           </form>
         </li>
-        <li><a href="index.htm">Geometría Plana y Analitica</a></li>
-        
+        <li><a href="index.htm">Geometría Plana y Analítica</a></li>
       </ul>
     </nav>
-  </div>
+    <span id="titulo-header"></span>
+  </header>
 
-  <!-- Contenido de la página -->
+  <!-- Contenido principal -->
   <section class="content">
-    
-    <h2>Geometría Plana y Analitica</h2>
-    <h1>Introduccion</h1>
-      <p>La geometría es la rama de las matemáticas que estudia las propiedades y las relaciones de figuras en el espacio. Dentro de ella, la geometría plana se enfoca en objetos bidimensionales como líneas, polígonos y círculos. Por otro lado, la geometría analítica combina el álgebra con la geometría asignando coordenadas a cada punto. Este enfoque permite traducir problemas geométricos en ecuaciones algebraicas, facilitando su análisis y resolución, en esta pagina podras encontrar los siguientes temas de la materia: </p>
-      
-      
-      <div>
+    <h2>Geometría Plana y Analítica</h2>
+    <h1>Introducción</h1>
+    <p class="text-justified">
+      La geometría es la rama de las matemáticas que estudia las propiedades y las relaciones de figuras en el espacio. 
+      Dentro de ella, la geometría plana se enfoca en objetos bidimensionales como líneas, polígonos y círculos. 
+      Por otro lado, la geometría analítica combina el álgebra con la geometría asignando coordenadas a cada punto. 
+      Este enfoque permite traducir problemas geométricos en ecuaciones algebraicas, facilitando su análisis y resolución. 
+      En esta página podrás encontrar los siguientes temas:
+    </p>
 
-      </div>
+    <ul>
+      <li><a href="Triangulos.htm">Triángulos</a></li>
+      <li><a href="#">Área, perímetro y volumen</a></li>
+      <li><a href="#">Teorema de Tales</a></li>
+      <li><a href="#">Teorema de Pitágoras</a></li>
+      <li><a href="#">Líneas</a></li>
+    </ul>
 
-
-
-  </section>
-
-<!-- pie de pagina -->
+  <!-- Pie de página -->
   <footer>
     <div class="footer-container">
       <div class="footer-section">
         <h4>Sobre Nosotros</h4>
-        <ul>
-          <li><a href="ventas.htm">Quiénes Somos</a></li>
+        <ul class="listas-footer">
+          <li><a href="#">Quiénes Somos</a></li>
           <li><a href="#">Colaboradores</a></li>
-          <li><a href="#"></a></li>
         </ul>
       </div>
-      
       <div class="footer-section">
         <h4>Redes Sociales</h4>
-        <ul>
-          <li><a href="#">asiua</a></li>
-          <li><a href="#">asda</a></li>
-          <li><a href="#">vfvsefd</a></li>
+        <ul class="listas-footer">
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Twitter</a></li>
         </ul>
       </div>
       <div class="footer-section">
         <h4>Contáctanos</h4>
-        <ul>
+        <ul class="listas-footer">
           <li><a href="#">murillostiven24@gmail.com</a></li>
-          <li><a href="#">312 6832280</a></li>
-          <li></li>
+          <li><a href="#">312 683 2280</a></li>
+          <li><a href="#">mosquerawilmer141@gmail.com</a></li>
+          <li><a href="#">312 864 4101</a></li>
         </ul>
       </div>
     </div>
     <div class="footer-bottom">
-      <p>&copy; 2025 - Programa de Telecounicaciones e Informatica 2025 01 - whatever</p>
+      <p class="text-centered">&copy; 2025 - Programa de Telecomunicaciones e Informática 2025-01</p>
     </div>
   </footer>
-
 
   <script src="main.js"></script>
 </body>

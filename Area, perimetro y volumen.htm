@@ -3,8 +3,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Geometría Plana y Analítica: Triángulos - Área, Perímetro y Volumen</title>
-  <!-- FontAwesome -->
+
+  <!-- Tipografía para H1 y H2 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+  <link rel="icon" href="Icono.png">
+  <title>Geometría Plana y Analítica</title>
+
+  <!-- FontAwesome para iconos -->
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -12,91 +19,96 @@
 
   <!-- Menú hamburguesa -->
   <input type="checkbox" id="menu-toggle" />
-  <label for="menu-toggle" class="menu-icon" aria-label="Abrir menú">
-    <span class="bar"></span>
-    <span class="bar"></span>
-    <span class="bar"></span>
+  <label for="menu-toggle" class="menu-icon">
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
   </label>
 
   <!-- Menú lateral -->
-  <nav class="side-menu" aria-label="Menú lateral">
+  <nav class="side-menu">
     <h2>Índice</h2>
     <ul>
       <li><a href="Triangulos.htm"><i class="fas fa-home"></i> Triángulos</a></li>
-      <li><a href="Area-perimetro-volumen.htm"><i class="fas fa-home"></i> Área, perímetro y volumen</a></li>
-      <li><a href="Teorema-de-Tales.htm"><i class="fas fa-home"></i> Teorema de Tales</a></li>
+      <li><a href="Area, perimetro y volumen.htm"><i class="fas fa-home"></i> Área, perímetro y volumen</a></li>
+      <li><a href="Teorema de Tales.htm"><i class="fas fa-home"></i> Teorema de Tales</a></li>
       <li><a href="#"><i class="fas fa-home"></i> Teorema de Pitágoras</a></li>
       <li><a href="#"><i class="fas fa-home"></i> Ángulos</a></li>
       <li><a href="#"><i class="fas fa-home"></i> Tipos de líneas</a></li>
-      <li><a href="#"><i class="fas fa-home"></i> Paracutirimícuaro</a></li>
+      <li><a href="#"><i class="fas fa-home"></i> Paracutirimicuaro</a></li>
       <li><a href="#"><i class="fas fa-envelope"></i> Mensajes</a></li>
     </ul>
   </nav>
 
-  <!-- Encabezado -->
-  <header class="navbar" role="banner">
-    <nav aria-label="Navegación principal">
+  <!-- Barra de navegación -->
+  <header class="navbar">
+    <nav>
       <ul>
         <li><a href="index.htm">Inicio</a></li>
         <li>
-          <form class="search-form" autocomplete="off" role="search">
-            <label for="busqueda" class="visually-hidden">Buscar</label>
+          <form class="search-form" autocomplete="off">
             <div class="search-box">
               <input type="search" id="busqueda" name="busqueda" placeholder="Buscar..." />
-              <button type="submit" class="search-btn" aria-label="Buscar">
-                <i class="fas fa-search"></i>
-              </button>
+              <button type="submit" class="search-btn"><i class="fas fa-search"></i></button>
             </div>
           </form>
         </li>
         <li><a href="index.htm">Geometría Plana y Analítica</a></li>
       </ul>
     </nav>
+    <span id="titulo-header"></span>
   </header>
 
   <!-- Contenido principal -->
-  <main class="content" role="main">
-    <section>
-      <ul>
-        <li><a href="#">Triángulos</a></li>
-        <li><a href="#">Área, perímetro y volumen</a></li>
-        <li><a href="#">Teorema de Tales</a></li>
-        <li><a href="#">Líneas</a></li>
-        <li><a href="#">Teorema de Pitágoras</a></li>
-      </ul>
-    </section>
-  </main>
+  <section class="content">
+    <h2>Geometría Plana y Analítica</h2>
+    <h1>Introducción</h1>
+    <p class="text-justified">
+      La geometría es la rama de las matemáticas que estudia las propiedades y las relaciones de figuras en el espacio. 
+      Dentro de ella, la geometría plana se enfoca en objetos bidimensionales como líneas, polígonos y círculos. 
+      Por otro lado, la geometría analítica combina el álgebra con la geometría asignando coordenadas a cada punto. 
+      Este enfoque permite traducir problemas geométricos en ecuaciones algebraicas, facilitando su análisis y resolución. 
+      En esta página podrás encontrar los siguientes temas:
+    </p>
+
+    <ul>
+      <li><a href="Triangulos.htm">Triángulos</a></li>
+      <li><a href="#">Área, perímetro y volumen</a></li>
+      <li><a href="#">Teorema de Tales</a></li>
+      <li><a href="#">Teorema de Pitágoras</a></li>
+      <li><a href="#">Líneas</a></li>
+    </ul>
 
   <!-- Pie de página -->
   <footer>
     <div class="footer-container">
       <div class="footer-section">
         <h4>Sobre Nosotros</h4>
-        <ul>
-          <li><a href="ventas.htm">Quiénes somos</a></li>
+        <ul class="listas-footer">
+          <li><a href="#">Quiénes Somos</a></li>
           <li><a href="#">Colaboradores</a></li>
         </ul>
       </div>
-
       <div class="footer-section">
         <h4>Redes Sociales</h4>
-        <ul>
+        <ul class="listas-footer">
           <li><a href="#">Facebook</a></li>
           <li><a href="#">Instagram</a></li>
-          <li><a href="#">YouTube</a></li>
+          <li><a href="#">Twitter</a></li>
         </ul>
       </div>
-
       <div class="footer-section">
         <h4>Contáctanos</h4>
-        <ul>
-          <li><a href="mailto:murillostiven24@gmail.com">murillostiven24@gmail.com</a></li>
-          <li><a href="tel:+573126832280">312 683 2280</a></li>
+        <ul class="listas-footer">
+          <li><a href="#">murillostiven24@gmail.com</a></li>
+          <li><a href="#">312 683 2280</a></li>
+          <li><a href="#">mosquerawilmer141@gmail.com</a></li>
+          <li><a href="#">312 864 4101</a></li>
         </ul>
       </div>
     </div>
     <div class="footer-bottom">
-      <p>&copy; 2025 - Programa de Telecomunicaciones e Informática</p>
+      <p class="text-centered">&copy; 2025 - Programa de Telecomunicaciones e Informática 2025-01</p>
     </div>
   </footer>
 
