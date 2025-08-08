@@ -28,15 +28,14 @@ a {
   color: #7f1982;
 }
 
-/* Estilo de títulos */
-h1, h2 {
-  font-family: Lora;
-}
-
-/* Hover en enlaces */
 a:hover {
   color: #2196f3;
   text-decoration: underline;
+}
+
+/* Estilo de títulos */
+h1, h2 {
+  font-family: Lora;
 }
 
 /* Textos personalizados */
@@ -44,6 +43,19 @@ a:hover {
   font-size: 20px;
   text-align: justify;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.txt2 {
+  font-size: 20px;
+  text-align: justify;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.txt {
+  font-size: 18px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 10px;
 }
 
 /* === Menú hamburguesa === */
@@ -67,6 +79,10 @@ a:hover {
 }
 
 /* Transformación a X */
+#menu-toggle {
+  display: none;
+}
+
 #menu-toggle:checked + label.menu-icon .bar:nth-child(1) {
   transform: translateY(9px) rotate(45deg);
 }
@@ -77,15 +93,6 @@ a:hover {
   transform: translateY(-9px) rotate(-45deg);
 }
 
-#menu-toggle {
-  display: none;
-}
-
-#menu-toggle:checked ~ .side-menu {
-  left: 0;
-}
-
-/* Mostrar menú lateral */
 #menu-toggle:checked ~ .side-menu {
   left: 0;
 }
@@ -94,30 +101,6 @@ a:hover {
   top: 73px;
   left: 16px;
   position: fixed;
-  z-index: 1000;
-}
-
-/* Transformación a X */
-#menu-toggle:checked + label.menu-icon .bar:nth-child(1) {
-  transform: translateY(9px) rotate(45deg);
-}
-#menu-toggle:checked + label.menu-icon .bar:nth-child(2) {
-  opacity: 0;
-}
-#menu-toggle:checked + label.menu-icon .bar:nth-child(3) {
-  transform: translateY(-9px) rotate(-45deg);
-}
-
-/* Ocultar checkbox */
-#menu-toggle {
-  display: none;
-}
-
-/* Cuando el menú lateral esté abierto, el botón hamburguesa baja donde esta el índice */
-#menu-toggle:checked + label.menu-icon {
-  position: fixed;
-  top: 73px;
-  left: 16px;
   z-index: 1000;
 }
 
@@ -133,6 +116,7 @@ a:hover {
   padding: 50px 20px;
   box-sizing: border-box;
   transition: left 0.3s ease;
+  z-index: 400;
 }
 
 .side-menu h2 {
@@ -320,291 +304,12 @@ footer {
   text-decoration: underline;
 }
 
-.txt2 {
-  font-size: 20px;
-  text-align: justify;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.txt {
-  font-size: 18px;
-  text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
-  padding: 10px;
-}
-
 /* === Estilo de los artículos === */
-.content{
+.content {
   background-color: #ffffff;
   border: 2px solid #2e1a47;
   margin: 40px 50px 30px 50px;
   padding: 8px 10px 40px 10px;
-}
-
-/* === Menú hamburguesa === */
-.menu-icon {
-  position: fixed;
-  top: 16px;
-  left: 15px;
-  width: 30px;
-  height: 25px;
-  cursor: pointer;
-  z-index: 1001;
-  transition: top 0.3s, left 0.3s;
-}
-
-/* Estilo de las barras del menú hamburguesa */
-.menu-icon .bar {
-  height: 4px;
-  background: #800080;
-  margin: 5px 0;
-  border-radius: 2px;
-  transition: 0.3s;
-  -webkit-transition: 0.3s;
-  -moz-transition: 0.3s;
-  -ms-transition: 0.3s;
-  -o-transition: 0.3s;
-}
-
-/* === Menú lateral === */
-.side-menu {
-  position: fixed;
-  left: -250px;
-  top: 0;
-  width: 250px;
-  height: 100%;
-  background-color: #ffffff;
-  box-shadow: 2px 0 10px #00000033;
-  padding: 50px 20px ;
-  box-sizing: border-box;
-  transition: left 0.3s ease;
-  z-index: 400;
-  -webkit-transition: left 0.3s ease;
-  -moz-transition: left 0.3s ease;
-  -ms-transition: left 0.3s ease;
-  -o-transition: left 0.3s ease;
-}
-
-/* Estilo del título del menú lateral */
-.side-menu h2 {
-  color: #800080;
-  text-align: center;
-  margin: 20px 0px;
-}
-
-/* Estilo de los enlaces del menú lateral */
-.side-menu ul {
-  list-style: none;
-  padding: 0;
-}
-
-/* Estilo de los elementos del menú lateral */
-.side-menu ul li {
-  margin: 15px 0;
-}
-
-/* Estilo de los enlaces del menú lateral */
-.side-menu ul li a {
-  text-decoration: none;
-  color: #111;
-  font-size: 18px;
-  transition: color 0.2s;
-  -webkit-transition: color 0.2s;
-  -moz-transition: color 0.2s;
-  -ms-transition: color 0.2s;
-  -o-transition: color 0.2s;
-}
-
-/* Cambiar color al pasar el mouse */
-.side-menu ul li:hover a {
-  color: #2196f3;
-}
-
-/* === header (navbar) === */
-.navbar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  box-sizing: border-box;
-  background: #181f29;
-  color: #fff;
-  padding: 0 32px;
-  display: flex;
-  align-items: center;
-  height: 65px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
-  z-index: 500;
-}
-
-/* Logo en la navbar */
-.navbar nav {
-  flex: 1;
-}
-
-/* Logo */
-.navbar ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-/* Elementos de la navbar */
-.navbar li {
-  position: relative;
-  margin: 0 8px;
-}
-
-/* Estilo de los enlaces de la navbar */
-.navbar a, .navbar span {
-  display: block;
-  padding: 18px 20px 15px 20px;
-  color: #fff;
-  text-decoration: none;
-  font-size: 1rem;
-  transition: background 0.2s;
-}
-
-/* Cambiar color al pasar el mouse */
-.navbar a:hover, .navbar li:hover > a {
-  background: #232b39;
-}
-
-/* === Formulario de búsqueda en navbar === */
-.search-form {
-  display: flex;
-  align-items: center;
-  margin: 0px 20px 0 100px;
-}
-
-/* Estilos para el input de búsqueda */
-.search-box {
-  position: relative;
-  display: flex;
-  align-items: center;
-}
-
-/* Estilo del input de búsqueda */
-.search-box input[type="search"] {
-  padding: 7px 36px 7px 12px;
-  border-radius: 20px;
-  border: 1px solid #232b39;
-  outline: none;
-  font-size: 1rem;
-  background: #232b39;
-  color: #fff;
-  transition: border 0.2s;
-  -webkit-transition: border 0.2s;
-  -moz-transition: border 0.2s;
-  -ms-transition: border 0.2s;
-  -o-transition: border 0.2s;
-}
-
-/* Cambiar borde al enfocar */
-.search-box input[type="search"]::placeholder {
-  color: #bbb;
-}
-
-/* Estilo del botón de búsqueda */
-.search-btn {
-  position: absolute;
-  right: 4px;
-  top: 50%;
-  transform: translateY(-50%);
-  background: none;
-  border: none;
-  color: #fff;
-  font-size: 1.1em;
-  cursor: pointer;
-  padding: 0 6px;
-  outline: none;
-  transition: color 0.2s;
-}
-
-/* Cambiar color al pasar el mouse */
-.search-btn:hover {
-  color: #4fc3f7;
-}
-
-/* === Estilo de los artículos === */
-.colaboradores {
-  font-size: 1rem;
-}
-
-/* === Estilo del footer === */
-footer {
-      background-color: #f5f5f5;
-      text-align: center;
-      padding: 40px 0;
-      font-family: Arial, sans-serif;
-      position: relative;
-      bottom: 0%;
-    }
-    
-    /* Contenedor del footer */
-    .footer-container {
-      display: flex;
-      justify-content: space-around;
-      flex-wrap: wrap;
-      position: relative;
-      bottom: 0%;
-    }
-    
-    /* Secciones del footer */
-    .footer-section {
-      flex: 1;
-      padding: 10px;
-      min-width: 200px;
-    }
-    
-    /* Estilo de los títulos de las secciones */
-    .footer-section h4 {
-      font-size: 22px;
-      margin-bottom: 15px;
-      color: #333;
-    }
-    
-    /* Estilo de los enlaces en las secciones */
-    .footer-section ul {
-      list-style: none;
-      padding: 0;
-    }
-    
-    /* Estilo de los elementos de la lista */
-    .footer-section ul li {
-      margin-bottom: 10px;
-    }
-    
-    /* Estilo de los enlaces */
-    .footer-section ul li a {
-      text-decoration: none;
-      color: #007BFF;
-      font-size: 18px;
-    }
-    
-    /* Cambiar color al pasar el mouse */
-    .footer-section ul li a:hover {
-      color: #0056b3;
-    }
-    
-    /* Estilo del texto de contacto */
-    .footer-bottom {
-      text-align: center;
-      margin-top: 30px;
-      padding-top: 20px;
-      border-top: 1px solid #ccc;
-      color: #666;
-      font-size: 14px;
-      position: relative;
-      bottom: 0%;
-    }
-
-    /* Estilo de los enlaces de la lista de colaboradores */
-    .listas-footer :hover {
-  text-decoration: underline;
 }
 
 /* === Media Queries === */
@@ -614,22 +319,18 @@ footer {
     width: 100%;
     justify-content: center;
   }
-
   .search-box {
     width: 100%;
   }
-
   .search-box input[type="search"] {
     width: 100%;
     font-size: 15px;
     padding: 10px 0 7px 10px;
     box-sizing: border-box;
   }
-
   .navbar {
     padding: 0 25px;
   }
-
   .navbar li a {
     box-sizing: border-box;
   }
@@ -661,15 +362,7 @@ footer {
   .navbar {
     padding: 0 25px;
   }
-
   .navbar li a {
     box-sizing: border-box;
-  }
-}
-
-/* Ocultar el li derecho en dispositivos moviles */
-@media (max-width: 1000px) {
-    .navbar ul li:nth-child(3) {
-    display: none;
   }
 }
